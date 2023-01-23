@@ -38,7 +38,17 @@ import matplotlib.pyplot as plt
 # Using the Ontario Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
+# +
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
+data = pd.read_csv('ont.csv')
+data
+plt.plot(data['year'], data['Lake Ontario annual averages'])
+plt.xlabel('Year')
+plt.ylabel('Lake Ontario annual averages')
+# -
 
 # PART 5
 # Using the Michigan/Huron and Superior Datasets, plot the 
@@ -55,7 +65,7 @@ import matplotlib.pyplot as plt
 
 
 # PART 7
-#Using the Superior and Ontario Datasets, plot the Superior Water 
+# Using the Superior and Ontario Datasets, plot the Superior Water 
 # Level vs Ontario Water Level to see if there is any correlation 
 # between the water levels.
 
