@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 To use this notebook for your in-class assignment, you will need these 
 files, which you shoujld have downloaded:
@@ -12,7 +11,7 @@ only expected to complete one PART below. Do not worry if your group
 is not big enough to finish all parts below, but if you have extra 
 time, you're welcome to do so.
 """
-=======
+#=======
 # +
 
 ## To use this notebook for your in-class assignment, you will need these 
@@ -27,7 +26,7 @@ time, you're welcome to do so.
 ## is not big enough to finish all parts below, but if you have extra 
 ## time, you're welcome to do so.
 
->>>>>>> merrick
+# Merrick
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -57,7 +56,12 @@ plt.title("Lake Michigan/Huron Water Level")
 # Using the Erie Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
-
+Erie = pd.read_csv('eri.csv')
+Erie_time = Erie['time']
+Erie_water = Erie['water level']
+plt.plot(Erie_time,Erie_water)
+plt.xlabel('Time')
+plt.ylabel('Water Level')
 
 # PART 4
 # Using the Ontario Dataset, plot the Water Level, the second column, 
@@ -79,7 +83,10 @@ plt.ylabel('Lake Ontario annual averages')
 # Using the Michigan/Huron and Superior Datasets, plot the 
 # Michigan/Hurion Water Level vs Superior Water Level to see if there 
 # is any correlation between the water levels.
-
+Mi = pd.read_csv('mhu.csv')
+Su = pd.read_csv('sup.csv')
+plt.plot(Mi)
+plt.plot(Su)
 
 
 # PART 6
