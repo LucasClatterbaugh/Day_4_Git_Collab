@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 To use this notebook for your in-class assignment, you will need these 
 files, which you shoujld have downloaded:
@@ -12,7 +11,7 @@ only expected to complete one PART below. Do not worry if your group
 is not big enough to finish all parts below, but if you have extra 
 time, you're welcome to do so.
 """
-=======
+#=======
 # +
 
 ## To use this notebook for your in-class assignment, you will need these 
@@ -27,7 +26,7 @@ time, you're welcome to do so.
 ## is not big enough to finish all parts below, but if you have extra 
 ## time, you're welcome to do so.
 
->>>>>>> merrick
+# Merrick
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
