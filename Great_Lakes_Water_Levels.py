@@ -56,7 +56,12 @@ plt.title("Lake Michigan/Huron Water Level")
 # Using the Erie Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
-
+Erie = pd.read_csv('eri.csv')
+Erie_time = Erie['time']
+Erie_water = Erie['water level']
+plt.plot(Erie_time,Erie_water)
+plt.xlabel('Time')
+plt.ylabel('Water Level')
 
 # PART 4
 # Using the Ontario Dataset, plot the Water Level, the second column, 
