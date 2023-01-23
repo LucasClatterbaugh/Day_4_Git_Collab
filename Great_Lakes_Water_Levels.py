@@ -63,7 +63,17 @@ plt.title("Lake Michigan/Huron Water Level")
 # Using the Ontario Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
+# +
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
+data = pd.read_csv('ont.csv')
+data
+plt.plot(data['year'], data['Lake Ontario annual averages'])
+plt.xlabel('Year')
+plt.ylabel('Lake Ontario annual averages')
+# -
 
 # PART 5
 # Using the Michigan/Huron and Superior Datasets, plot the 
