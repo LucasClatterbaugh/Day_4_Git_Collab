@@ -44,7 +44,10 @@ import matplotlib.pyplot as plt
 # Using the Michigan/Huron and Superior Datasets, plot the 
 # Michigan/Hurion Water Level vs Superior Water Level to see if there 
 # is any correlation between the water levels.
-
+Mi = pd.read_csv('mhu.csv')
+Su = pd.read_csv('sup.csv')
+plt.plot(Mi)
+plt.plot(Su)
 
 
 # PART 6
